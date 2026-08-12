@@ -66,6 +66,7 @@ try {
 
         const fn = AVAILABLE_TOOLS[fnName];
         const result = await fn(args);
+        console.log(`[tool 結果] ${JSON.stringify(result)}`);
 
         history.push({
           type: "function_call_output",
